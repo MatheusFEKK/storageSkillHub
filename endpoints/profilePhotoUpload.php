@@ -1,11 +1,12 @@
 <?php
-    $directory = '../imageFiles/';
-    $targetDirectory = $directory . basename(($_FILES['uploadFile']['name']));
-    
-    if (isset($_FILES['uploadFile']))
+
+    $directory = '../profilePhotos';
+    $targetDirectory = $directory . basename(($_FILES['profileImageUpload']['name']));
+
+    if (isset($_FILES['profileImageUpload']))
     {
                 
-            if (move_uploaded_file($_FILES['uploadFile']['tmp_name'], $targetDirectory))
+            if (move_uploaded_file($_FILES['profileImageUpload']['tmp_name'], $targetDirectory))
             {   
                     http_response_code(200);
                     echo "Upload successfully";
