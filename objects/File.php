@@ -22,4 +22,15 @@
                 return false;
             }
         }
+
+        public function GetImages($url)
+        {
+            $directory = "%".$url."%";
+            $sql = "SELECT nome FROM imagens WHERE nome LIKE :nome";
+            $requisition = $this->db->prepare($sql);
+            $requisition->bindParam(":nome", $directory);
+            $requisition->execute();
+
+            return $requisition->fetchAll(PDO::FETCH_OBJ);
+        }
     }

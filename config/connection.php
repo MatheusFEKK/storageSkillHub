@@ -1,11 +1,10 @@
 <?php
 
     Class database{
-        private $host = "localhost:3316";
-
+        private $host     = "localhost:3306";
         private $database = "storageSkillHub";
-        private $user = "root";
-        private $password = "123456";
+        private $user     = "root";
+        private $password = "10012019";
 
         public $conn;
 
