@@ -1,6 +1,6 @@
 <?php
 
-    $directory = '../profilePhotos';
+    $directory = '../imageProfile/';
     $targetDirectory = $directory . basename(($_FILES['profileImageUpload']['name']));
 
     if (isset($_FILES['profileImageUpload']))

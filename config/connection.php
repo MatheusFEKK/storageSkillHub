@@ -1,7 +1,7 @@
 <?php
 
     Class database{
-        private $host     = "localhost:3306";
+        private $host     = "localhost:3307";
         private $database = "storageSkillHub";
         private $user     = "root";
         private $password = "10012019";
