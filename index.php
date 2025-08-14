@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="./receiveFile.php" method="POST" enctype="multipart/form-data">
+    <form action="./endpoints/uploadFile.php" method="POST" enctype="multipart/form-data">
         <input type="file" name="uploadFile">
         <button type="submit" name="sendFile">Enviar</button>
     </form>
